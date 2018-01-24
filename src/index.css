@@ -1,0 +1,57 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, .6);
+}
+
+.h-app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn .8s both;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, .8);
+  margin: 0 10px;
+}
+
+p {
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.h-social {
+  margin-top: 10px;
+}
+
+.h-social a {
+  margin: 0 3px;
+  transition: all .1s ease-in;
+  filter: grayscale(50%);
+}
+
+.h-social a:hover {
+  filter: grayscale(0%);
+  transform: translateY(-2px);
+}

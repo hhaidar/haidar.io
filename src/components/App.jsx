@@ -40,14 +40,15 @@ const App = () => (
       <SocialIcon
         url="https://instagram.com/thirdcoolest"
         title="Instagram"
-        size="20"
+        style={{ height: 42, width: 42 }}
       />
-      <SocialIcon url="https://github.com/hhaidar" title="github" />
+      <SocialIcon url="https://github.com/hhaidar" title="github" style={{ height: 42, width: 42 }} />
       <SocialIcon
         url="https://linkedin.com/in/houssam-haidar/"
         title="linkedin"
+        style={{ height: 42, width: 42 }}
       />
-      <SocialIcon url="https://twitter.com/letstweetbro" title="twitter" />
+      <SocialIcon url="https://twitter.com/letstweetbro" title="twitter"  style={{ height: 42, width: 42 }}/>
     </nav>
   </div>
 );

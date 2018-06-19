@@ -4,6 +4,7 @@ import { SocialIcon } from "react-social-icons";
 
 const App = () => (
   <div className="h-app">
+    <div className="h-content">
     <section className="h-about">
       <div className="spin h-photo">
         <img src="https://i.imgur.com/zYYw0JI.jpg" alt="photo" />
@@ -31,8 +32,7 @@ const App = () => (
             href="https://sdelements.github.io/lets-chat/"
             target="_blank"
             children="Let's Chat"
-          />, one of the most popular open source chat apps with almost 9000
-          GitHub stars.
+          />, one of the most popular open source chat apps around.
         </p>
       </section>
     </section>
@@ -50,6 +50,7 @@ const App = () => (
       />
       <SocialIcon url="https://twitter.com/letstweetbro" title="twitter"  style={{ height: 42, width: 42 }}/>
     </nav>
+    </div>
   </div>
 );
 

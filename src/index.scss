@@ -39,12 +39,15 @@ body {
   justify-content: center;
 }
 
-.h-app {
+.h-content {
   max-width: $maxWidth - 60px;
   text-align: center;
-  padding: 40px 30px;
+  padding: 50px 30px;
   margin: 0 auto;
   animation: fadeIn 0.8s both;
+  @media only screen and (max-width: $maxWidth) {
+    padding: 40px 30px;
+  }
 }
 
 .h-photo {
@@ -110,7 +113,7 @@ p {
   font-size: 20px;
   line-height: 34px;
   @media only screen and (max-width: $maxWidth) {
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px 0;
   }
 }

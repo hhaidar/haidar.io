@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel src/index.html ",
-    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url ./",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url ./ --no-cache",
     "deploy": "rimraf dist && yarn build && cp CNAME dist/CNAME && gh-pages -d dist"
   },
   "dependencies": {

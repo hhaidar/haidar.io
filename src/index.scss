@@ -1,0 +1,126 @@
+$bodyBackground: #f7f7f7;
+$accent: #c5b358;
+$blue: blue;
+$photoSize: 200px;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes colorIn {
+  from {
+    border-color: rgba(0, 0, 0, 0.72);
+    transform: scale(0.8);
+    filter: sepia(60%);
+  }
+
+  to {
+    border-color: $accent;
+    transform: scale(1.02);
+    filter: sepia(0);
+  }
+}
+
+body {
+  background: $bodyBackground;
+  font-family: Roboto, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-app {
+  max-width: 600px;
+  text-align: center;
+  padding: 40px 30px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s both;
+}
+
+.h-photo {
+  width: $photoSize + 8px;
+  height: $photoSize + 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px $accent solid;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  animation: colorIn 1s both;
+  animation-delay: 0.7s;
+  &,
+  img {
+    border-radius: 100%;
+  }
+  img {
+    width: $photoSize;
+    height: $photoSize;
+  }
+}
+
+h1 {
+  background: $bodyBackground;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 55px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 10px;
+  position: relative;
+  display: inline-block;
+  &:before {
+    background: lighten($accent, 10%);
+    width: calc(100% + 50px);
+    height: 2px;
+    content: " ";
+    margin-top: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: -1;
+    transform: translateX(-25px);
+  }
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.h-about {
+  max-width: 800px;
+  a {
+    color: darken($accent, 10%);
+    text-decoration: none;
+    padding-bottom: 2px;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in;
+    &:hover {
+      box-shadow: 0 5px 0 -4px currentColor;
+    }
+  }
+}
+
+.h-social {
+  margin-top: 40px;
+  a {
+    margin: 0 3px;
+    transition: all 0.1s ease-in;
+    filter: sepia(60%);
+    &:hover {
+      filter: sepia(0%);
+      transform: translateY(-2px);
+    }
+  }
+}

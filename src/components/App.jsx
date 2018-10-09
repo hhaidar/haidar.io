@@ -48,7 +48,7 @@ const App = () => (
         title="linkedin"
         style={{ height: 42, width: 42 }}
       />
-      <SocialIcon url="https://twitter.com/letstweetbro" title="twitter"  style={{ height: 42, width: 42 }}/>
+      <SocialIcon url="https://twitter.com/thirdchillest" title="twitter"  style={{ height: 42, width: 42 }}/>
     </nav>
     </div>
   </div>
